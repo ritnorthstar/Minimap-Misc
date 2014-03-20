@@ -1,0 +1,86 @@
+{
+  "id": 0,
+  "name": "Gordon Field House",
+  "walls": [],
+  "tables": [
+    {
+      "numTablesWide": 4,
+      "numTablesTall": 2,
+      "x": 100,
+      "y": 100,
+      "width": 300,
+      "height": 50
+    },
+    {
+      "numTablesWide": 4,
+      "numTablesTall": 2,
+      "x": 100,
+      "y": 250,
+      "width": 300,
+      "height": 50
+    },
+    {
+      "numTablesWide": 4,
+      "numTablesTall": 2,
+      "x": 100,
+      "y": 400,
+      "width": 300,
+      "height": 50
+    },
+    {
+      "numTablesWide": 2,
+      "numTablesTall": 4,
+      "x": 500,
+      "y": 100,
+      "width": 100,
+      "height": 350
+    }
+  ],
+  "beacons": [
+    {
+      "id": "nw",
+      "x": 125,
+      "y": 125
+    },
+    {
+      "id": "n",
+      "x": 375,
+      "y": 125
+    },
+    {
+      "id": "ne",
+      "x": 550,
+      "y": 125
+    },
+	{
+      "id": "w",
+      "x": 125,
+      "y": 275
+    },
+    {
+      "id": "c",
+      "x": 375,
+      "y": 275
+    },
+    {
+      "id": "e",
+      "x": 550,
+      "y": 275
+    },
+	{
+      "id": "sw",
+      "x": 125,
+      "y": 425
+    },
+    {
+      "id": "s",
+      "x": 375,
+      "y": 425
+    },
+    {
+      "id": "se",
+      "x": 550,
+      "y": 425
+    },
+  ]
+}
