@@ -1,86 +1,257 @@
 {
-  "id": 0,
-  "name": "Gordon Field House",
-  "walls": [],
-  "tables": [
-    {
-      "numTablesWide": 4,
-      "numTablesTall": 2,
-      "x": 100,
-      "y": 100,
-      "width": 300,
-      "height": 50
-    },
-    {
-      "numTablesWide": 4,
-      "numTablesTall": 2,
-      "x": 100,
-      "y": 250,
-      "width": 300,
-      "height": 50
-    },
-    {
-      "numTablesWide": 4,
-      "numTablesTall": 2,
-      "x": 100,
-      "y": 400,
-      "width": 300,
-      "height": 50
-    },
-    {
-      "numTablesWide": 2,
-      "numTablesTall": 4,
-      "x": 500,
-      "y": 100,
-      "width": 100,
-      "height": 350
-    }
-  ],
-  "beacons": [
-    {
-      "id": "nw",
-      "x": 125,
-      "y": 125
-    },
-    {
-      "id": "n",
-      "x": 375,
-      "y": 125
-    },
-    {
-      "id": "ne",
-      "x": 550,
-      "y": 125
-    },
-	{
-      "id": "w",
-      "x": 125,
-      "y": 275
-    },
-    {
-      "id": "c",
-      "x": 375,
-      "y": 275
-    },
-    {
-      "id": "e",
-      "x": 550,
-      "y": 275
-    },
-	{
-      "id": "sw",
-      "x": 125,
-      "y": 425
-    },
-    {
-      "id": "s",
-      "x": 375,
-      "y": 425
-    },
-    {
-      "id": "se",
-      "x": 550,
-      "y": 425
-    },
-  ]
+   "Id":"10663a13-6a03-4f55-885d-bfc05e38d9a0",
+   "Name":"Gordon Field House",
+   "Width":800.0,
+   "Height":600.0,
+   "Barriers":[
+
+   ],
+   "Tables":[
+      {
+         "Id":"481bd794-e066-485b-b6b2-df9f303dd57b",
+         "TablesWide":4,
+         "TablesTall":2,
+         "X":100.0,
+         "Y":100.0,
+         "Z":0.0,
+         "Width":300.0,
+         "Height":50.0
+      },
+      {
+         "Id":"3c419208-d0cd-4eb8-a811-5c619815a7d8",
+         "TablesWide":4,
+         "TablesTall":2,
+         "X":100.0,
+         "Y":250.0,
+         "Z":0.0,
+         "Width":300.0,
+         "Height":50.0
+      },
+      {
+         "Id":"d98a877a-533b-4ad4-b733-c67387a44f6e",
+         "TablesWide":4,
+         "TablesTall":2,
+         "X":100.0,
+         "Y":400.0,
+         "Z":0.0,
+         "Width":300.0,
+         "Height":50.0
+      },
+      {
+         "Id":"94e2b225-c7df-48eb-8b27-6264ca282843",
+         "TablesWide":2,
+         "TablesTall":4,
+         "X":500.0,
+         "Y":100.0,
+         "Z":0.0,
+         "Width":100.0,
+         "Height":350.0
+      }
+   ],
+   "Beacons":[
+      {
+         "Id":"6653b10b-da92-45cc-8998-b2c4b256c1b3",
+         "BeaconId":"nw",
+         "X":125.0,
+         "Y":125.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"dda5f473-bcde-4a68-973e-5b91124127d8",
+         "BeaconId":"n",
+         "X":375.0,
+         "Y":125.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"2e60bebe-b7d8-4010-ac15-19f16c234fed",
+         "BeaconId":"ne",
+         "X":550.0,
+         "Y":125.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"2b7c8385-2c07-41d8-96c7-18656e852d09",
+         "BeaconId":"w",
+         "X":125.0,
+         "Y":275.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"f71184d1-33c2-4f96-b34d-ea9d0e2b4f73",
+         "BeaconId":"c",
+         "X":375.0,
+         "Y":275.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"5dcb250d-8638-451c-82e6-ef5b6b8561ba",
+         "BeaconId":"3",
+         "X":550.0,
+         "Y":275.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"ec1e00bf-cda8-440a-b2c2-13f98ef2969f",
+         "BeaconId":"sw",
+         "X":125.0,
+         "Y":425.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"e5f7057f-451f-49f3-9b1f-ad1537ada337",
+         "BeaconId":"s",
+         "X":375.0,
+         "Y":425.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"fd05ea0e-9fac-4fec-a1d6-f606952e2b75",
+         "BeaconId":"se",
+         "X":550.0,
+         "Y":425.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      }
+   ],
+   "Components":[
+      {
+         "Id":"481bd794-e066-485b-b6b2-df9f303dd57b",
+         "TablesWide":4,
+         "TablesTall":2,
+         "X":100.0,
+         "Y":100.0,
+         "Z":0.0,
+         "Width":300.0,
+         "Height":50.0
+      },
+      {
+         "Id":"3c419208-d0cd-4eb8-a811-5c619815a7d8",
+         "TablesWide":4,
+         "TablesTall":2,
+         "X":100.0,
+         "Y":250.0,
+         "Z":0.0,
+         "Width":300.0,
+         "Height":50.0
+      },
+      {
+         "Id":"d98a877a-533b-4ad4-b733-c67387a44f6e",
+         "TablesWide":4,
+         "TablesTall":2,
+         "X":100.0,
+         "Y":400.0,
+         "Z":0.0,
+         "Width":300.0,
+         "Height":50.0
+      },
+      {
+         "Id":"94e2b225-c7df-48eb-8b27-6264ca282843",
+         "TablesWide":2,
+         "TablesTall":4,
+         "X":500.0,
+         "Y":100.0,
+         "Z":0.0,
+         "Width":100.0,
+         "Height":350.0
+      },
+      {
+         "Id":"6653b10b-da92-45cc-8998-b2c4b256c1b3",
+         "BeaconId":"nw",
+         "X":125.0,
+         "Y":125.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"dda5f473-bcde-4a68-973e-5b91124127d8",
+         "BeaconId":"n",
+         "X":375.0,
+         "Y":125.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"2e60bebe-b7d8-4010-ac15-19f16c234fed",
+         "BeaconId":"ne",
+         "X":550.0,
+         "Y":125.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"2b7c8385-2c07-41d8-96c7-18656e852d09",
+         "BeaconId":"w",
+         "X":125.0,
+         "Y":275.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"f71184d1-33c2-4f96-b34d-ea9d0e2b4f73",
+         "BeaconId":"c",
+         "X":375.0,
+         "Y":275.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"5dcb250d-8638-451c-82e6-ef5b6b8561ba",
+         "BeaconId":"3",
+         "X":550.0,
+         "Y":275.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"ec1e00bf-cda8-440a-b2c2-13f98ef2969f",
+         "BeaconId":"sw",
+         "X":125.0,
+         "Y":425.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"e5f7057f-451f-49f3-9b1f-ad1537ada337",
+         "BeaconId":"s",
+         "X":375.0,
+         "Y":425.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      },
+      {
+         "Id":"fd05ea0e-9fac-4fec-a1d6-f606952e2b75",
+         "BeaconId":"se",
+         "X":550.0,
+         "Y":425.0,
+         "Z":0.0,
+         "Width":0.0,
+         "Height":0.0
+      }
+   ]
 }
