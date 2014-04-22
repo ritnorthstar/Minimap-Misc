@@ -1,0 +1,259 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Information</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Sample User JSON</h1>
+            <p>
+                {
+                <br>&nbsp;&nbsp;"Id":"b839be1e-1e94-4433-b8fb-64cd31e4d211",
+                <br>&nbsp;&nbsp;"Name":"Bruce Wayne",
+                <br>&nbsp;&nbsp;"TeamId":"0f2b1f73-6fcc-4750-9540-de48cbd6737b",
+                <br>&nbsp;&nbsp;"X":150,
+                <br>&nbsp;&nbsp;"Y":250,
+                <br>&nbsp;&nbsp;"Z":50
+                <br>}
+            </p>
+            <br>
+            <br>
+            <h1>Sample Get-All Request</h1>
+            <p>
+                $.ajax({
+                <br>&nbsp;&nbsp;type: "GET",
+                <br>&nbsp;&nbsp;url: "http://host:port/api/users/",
+                <br>&nbsp;&nbsp;success: null,
+                <br>&nbsp;&nbsp;dataType: "json"
+                <br>});
+            </p>
+            <p>This will return an array of all registered users.</p>
+            <br>
+            <br>
+            <h1>Sample Get Request</h1>
+            <p>
+                $.ajax({
+                <br>&nbsp;&nbsp;type: "GET",
+                <br>&nbsp;&nbsp;url: "http://host:port/api/users/b839be1e-1e94-4433-b8fb-64cd31e4d211",
+                <br>&nbsp;&nbsp;success: null,
+                <br>&nbsp;&nbsp;dataType: "json"
+                <br>});
+            </p>
+            <p>By appending the url with a known user ID, the server will return information associated with that user.</p>
+            <br>
+            <br>
+            <h1>Sample Post Request</h1>
+            <p>
+                $.ajax({
+                <br>&nbsp;&nbsp;type: "POST",
+                <br>&nbsp;&nbsp;url: "http://host:port/api/users/",
+                <br>&nbsp;&nbsp;data: {"Name":"Dick Grayson","TeamId":"0f2b1f73-6fcc-4750-9540-de48cbd6737b","X":100,"Y":100,"Z":50},
+                <br>&nbsp;&nbsp;success: null,
+                <br>&nbsp;&nbsp;dataType: "json"
+                <br>});
+            </p>
+            <p>Post should be used to create a new user.</p>
+            <p>The server assigns the user an Id upon creation, so you do not need to specify one in the request.</p>
+            <p>A TeamId must be specified if the user belongs to a team.</p>
+            <br>
+            <br>
+            <h1>Sample Post Response</h1>
+            <p>
+                {
+                <br>&nbsp;&nbsp;"Id":"7e67659f-07b6-460a-8bf1-9051283df2c4",
+                <br>&nbsp;&nbsp;"Name":"Dick Grayson",
+                <br>&nbsp;&nbsp;"TeamId":"0f2b1f73-6fcc-4750-9540-de48cbd6737b",
+                <br>&nbsp;&nbsp;"X":100,
+                <br>&nbsp;&nbsp;"Y":100,
+                <br>&nbsp;&nbsp;"Z":50
+                <br>}
+            </p>
+            <p>The user's new Id is included in this response.</p>
+            <br>
+            <br>
+            <h1>Sample Put Request</h1>
+            <p>
+                $.ajax({
+                <br>&nbsp;&nbsp;type: "PUT",
+                <br>&nbsp;&nbsp;url: "http://host:port/api/users/7e67659f-07b6-460a-8bf1-9051283df2c4",
+                <br>&nbsp;&nbsp;data: {"Name":"Dick Grayson","TeamId":"0f2b1f73-6fcc-4750-9540-de48cbd6737b","X":200,"Y":100,"Z":50},
+                <br>&nbsp;&nbsp;success: null,
+                <br>&nbsp;&nbsp;dataType: "json"
+                <br>});
+            </p>
+            <p>By appending the user's Id to the URL and making a PUT request, we can override the properties of an existing user.</p>
+            <p>Partial updating is not uet supported - you will need to pass the entire user in order to update a field (Id optional).</p>
+            <br>
+            <br>
+            <h1>Sample Delete Request</h1>
+            <p>
+                $.ajax({
+                <br>&nbsp;&nbsp;type: "DELETE",
+                <br>&nbsp;&nbsp;url: "http://host:port/api/users/7e67659f-07b6-460a-8bf1-9051283df2c4",
+                <br>&nbsp;&nbsp;success: null,
+                <br>&nbsp;&nbsp;dataType: "json"
+                <br>});
+            </p>
+            <p>By appending the user's Id to the URL and making a DELETE request, we can remove the user from the system.</p>
+            <br>
+            <br>
+            <h1>Other Web API Endpoints</h1>
+            <p>Other supported endpoints include /api/maps and /api/teams.</p>
+            <p>These are currently read-only endpoints, though remote writing can be enabled via a setting in the Core/Minimap.cs class.</p>
+            <p>With the exception of being read-only, these endpoints work in the same way as /api/users. </p>
+            <br>
+            <br>
+            <h1>Sample Map JSON</h1>
+            <p>
+                {
+                <br>&nbsp;&nbsp;"Id":"10663a13-6a03-4f55-885d-bfc05e38d9a0",
+                <br>&nbsp;&nbsp;"Name":"Gordon Field House",
+                <br>&nbsp;&nbsp;"Width":800.0,
+                <br>&nbsp;&nbsp;"Height":600.0,
+                <br>&nbsp;&nbsp;"Tech":"BLE",
+                <br>&nbsp;&nbsp;"Barriers":[],
+                <br>&nbsp;&nbsp;"Tables":[{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"481bd794-e066-485b-b6b2-df9f303dd57b",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesWide":4,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesTall":2,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":100.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":100.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":300.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":50.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"3c419208-d0cd-4eb8-a811-5c619815a7d8",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesWide":4,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesTall":2,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":100.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":250.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":300.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":50.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"d98a877a-533b-4ad4-b733-c67387a44f6e",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesWide":4,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesTall":2,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":100.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":400.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":300.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":50.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"94e2b225-c7df-48eb-8b27-6264ca282843",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesWide":2,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesTall":4,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":500.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":100.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":100.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":350.0
+                <br>&nbsp;&nbsp;}],
+                <br>&nbsp;&nbsp;"Beacons":[{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"6653b10b-da92-45cc-8998-b2c4b256c1b3",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"nw",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":125.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":125.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"dda5f473-bcde-4a68-973e-5b91124127d8",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"n",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":375.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":125.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"2e60bebe-b7d8-4010-ac15-19f16c234fed",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"ne",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":550.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":125.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"2b7c8385-2c07-41d8-96c7-18656e852d09",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"w",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":125.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":275.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"f71184d1-33c2-4f96-b34d-ea9d0e2b4f73",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"c",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":375.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":275.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"5dcb250d-8638-451c-82e6-ef5b6b8561ba",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"3",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":550.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":275.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"ec1e00bf-cda8-440a-b2c2-13f98ef2969f",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"sw",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":125.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":425.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"e5f7057f-451f-49f3-9b1f-ad1537ada337",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"s",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":375.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":425.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"fd05ea0e-9fac-4fec-a1d6-f606952e2b75",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"se",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":550.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":425.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;}]
+                <br>}
+            </p>
+            <br>
+            <br>
+            <h1>Sample Team JSON</h1>
+            <p>
+                {
+                <br>&nbsp;&nbsp;"Id":"0667d606-5c4e-4bc8-b178-b4ec3f5acf51",
+                <br>&nbsp;&nbsp;"Name":"Scorpion",
+                <br>&nbsp;&nbsp;"PrimaryColor":{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"A":255,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"R":244,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"G":164,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"B":96
+                <br>&nbsp;&nbsp;},
+                <br>&nbsp;&nbsp;"SecondaryColor":{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"A":255,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"R":128,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"G":0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"B":0
+                <br>&nbsp;&nbsp;}
+                <br>}
+            </p>
+            <p>Colors are represented in ARGB values.</p>
+            <p>Note that teams currently have no knowledge of their users. You will have to search through users by TeamId to achieve this sort of query.</p>
+        </div>
+        <script src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+    </body>
+</html>
