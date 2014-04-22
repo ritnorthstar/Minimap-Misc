@@ -3,6 +3,7 @@
    "Name":"Gordon Field House",
    "Width":800.0,
    "Height":600.0,
+   "Tech":"BLE",
    "Barriers":[
 
    ],
