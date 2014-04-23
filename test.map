@@ -52,7 +52,7 @@
    "Beacons":[
       {
          "Id":"6653b10b-da92-45cc-8998-b2c4b256c1b3",
-         "BeaconId":"nw",
+         "DeviceLabel":"nw",
          "X":125.0,
          "Y":125.0,
          "Z":0.0,
@@ -61,7 +61,7 @@
       },
       {
          "Id":"dda5f473-bcde-4a68-973e-5b91124127d8",
-         "BeaconId":"n",
+         "DeviceLabel":"n",
          "X":375.0,
          "Y":125.0,
          "Z":0.0,
@@ -70,7 +70,7 @@
       },
       {
          "Id":"2e60bebe-b7d8-4010-ac15-19f16c234fed",
-         "BeaconId":"ne",
+         "DeviceLabel":"ne",
          "X":550.0,
          "Y":125.0,
          "Z":0.0,
@@ -79,7 +79,7 @@
       },
       {
          "Id":"2b7c8385-2c07-41d8-96c7-18656e852d09",
-         "BeaconId":"w",
+         "DeviceLabel":"w",
          "X":125.0,
          "Y":275.0,
          "Z":0.0,
@@ -88,7 +88,7 @@
       },
       {
          "Id":"f71184d1-33c2-4f96-b34d-ea9d0e2b4f73",
-         "BeaconId":"c",
+         "DeviceLabel":"c",
          "X":375.0,
          "Y":275.0,
          "Z":0.0,
@@ -97,7 +97,7 @@
       },
       {
          "Id":"5dcb250d-8638-451c-82e6-ef5b6b8561ba",
-         "BeaconId":"3",
+         "DeviceLabel":"3",
          "X":550.0,
          "Y":275.0,
          "Z":0.0,
@@ -106,7 +106,7 @@
       },
       {
          "Id":"ec1e00bf-cda8-440a-b2c2-13f98ef2969f",
-         "BeaconId":"sw",
+         "DeviceLabel":"sw",
          "X":125.0,
          "Y":425.0,
          "Z":0.0,
@@ -115,7 +115,7 @@
       },
       {
          "Id":"e5f7057f-451f-49f3-9b1f-ad1537ada337",
-         "BeaconId":"s",
+         "DeviceLabel":"s",
          "X":375.0,
          "Y":425.0,
          "Z":0.0,
@@ -124,130 +124,7 @@
       },
       {
          "Id":"fd05ea0e-9fac-4fec-a1d6-f606952e2b75",
-         "BeaconId":"se",
-         "X":550.0,
-         "Y":425.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      }
-   ],
-   "Components":[
-      {
-         "Id":"481bd794-e066-485b-b6b2-df9f303dd57b",
-         "TablesWide":4,
-         "TablesTall":2,
-         "X":100.0,
-         "Y":100.0,
-         "Z":0.0,
-         "Width":300.0,
-         "Height":50.0
-      },
-      {
-         "Id":"3c419208-d0cd-4eb8-a811-5c619815a7d8",
-         "TablesWide":4,
-         "TablesTall":2,
-         "X":100.0,
-         "Y":250.0,
-         "Z":0.0,
-         "Width":300.0,
-         "Height":50.0
-      },
-      {
-         "Id":"d98a877a-533b-4ad4-b733-c67387a44f6e",
-         "TablesWide":4,
-         "TablesTall":2,
-         "X":100.0,
-         "Y":400.0,
-         "Z":0.0,
-         "Width":300.0,
-         "Height":50.0
-      },
-      {
-         "Id":"94e2b225-c7df-48eb-8b27-6264ca282843",
-         "TablesWide":2,
-         "TablesTall":4,
-         "X":500.0,
-         "Y":100.0,
-         "Z":0.0,
-         "Width":100.0,
-         "Height":350.0
-      },
-      {
-         "Id":"6653b10b-da92-45cc-8998-b2c4b256c1b3",
-         "BeaconId":"nw",
-         "X":125.0,
-         "Y":125.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      },
-      {
-         "Id":"dda5f473-bcde-4a68-973e-5b91124127d8",
-         "BeaconId":"n",
-         "X":375.0,
-         "Y":125.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      },
-      {
-         "Id":"2e60bebe-b7d8-4010-ac15-19f16c234fed",
-         "BeaconId":"ne",
-         "X":550.0,
-         "Y":125.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      },
-      {
-         "Id":"2b7c8385-2c07-41d8-96c7-18656e852d09",
-         "BeaconId":"w",
-         "X":125.0,
-         "Y":275.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      },
-      {
-         "Id":"f71184d1-33c2-4f96-b34d-ea9d0e2b4f73",
-         "BeaconId":"c",
-         "X":375.0,
-         "Y":275.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      },
-      {
-         "Id":"5dcb250d-8638-451c-82e6-ef5b6b8561ba",
-         "BeaconId":"3",
-         "X":550.0,
-         "Y":275.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      },
-      {
-         "Id":"ec1e00bf-cda8-440a-b2c2-13f98ef2969f",
-         "BeaconId":"sw",
-         "X":125.0,
-         "Y":425.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      },
-      {
-         "Id":"e5f7057f-451f-49f3-9b1f-ad1537ada337",
-         "BeaconId":"s",
-         "X":375.0,
-         "Y":425.0,
-         "Z":0.0,
-         "Width":0.0,
-         "Height":0.0
-      },
-      {
-         "Id":"fd05ea0e-9fac-4fec-a1d6-f606952e2b75",
-         "BeaconId":"se",
+         "DeviceLabel":"se",
          "X":550.0,
          "Y":425.0,
          "Z":0.0,
