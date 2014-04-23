@@ -88,7 +88,7 @@ and open the template in the editor.
                 <br>});
             </p>
             <p>By appending the user's Id to the URL and making a PUT request, we can override the properties of an existing user.</p>
-            <p>Partial updating is not uet supported - you will need to pass the entire user in order to update a field (Id optional).</p>
+            <p>Partial updating is not yet supported - you will need to pass the entire user in order to update a field (Id optional).</p>
             <br>
             <br>
             <h1>Sample Delete Request</h1>
@@ -117,7 +117,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;"Width":800.0,
                 <br>&nbsp;&nbsp;"Height":600.0,
                 <br>&nbsp;&nbsp;"Tech":"BLE",
-                <br>&nbsp;&nbsp;"Barriers":[],
+                <br>&nbsp;&nbsp;"Barriers":[
+                <br>&nbsp;&nbsp;],
                 <br>&nbsp;&nbsp;"Tables":[{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"481bd794-e066-485b-b6b2-df9f303dd57b",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"TablesWide":4,
@@ -157,7 +158,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;}],
                 <br>&nbsp;&nbsp;"Beacons":[{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"6653b10b-da92-45cc-8998-b2c4b256c1b3",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"nw",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"nw",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":125.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":125.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -165,7 +167,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
                 <br>&nbsp;&nbsp;},{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"dda5f473-bcde-4a68-973e-5b91124127d8",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"n",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"n",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":375.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":125.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -173,7 +176,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
                 <br>&nbsp;&nbsp;},{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"2e60bebe-b7d8-4010-ac15-19f16c234fed",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"ne",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"ne",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":550.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":125.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -181,7 +185,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
                 <br>&nbsp;&nbsp;},{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"2b7c8385-2c07-41d8-96c7-18656e852d09",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"w",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"w",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":125.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":275.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -189,7 +194,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
                 <br>&nbsp;&nbsp;},{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"f71184d1-33c2-4f96-b34d-ea9d0e2b4f73",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"c",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"c",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":375.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":275.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -197,7 +203,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
                 <br>&nbsp;&nbsp;},{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"5dcb250d-8638-451c-82e6-ef5b6b8561ba",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"3",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"3",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":550.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":275.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -205,7 +212,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
                 <br>&nbsp;&nbsp;},{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"ec1e00bf-cda8-440a-b2c2-13f98ef2969f",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"sw",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"sw",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":125.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":425.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -213,7 +221,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
                 <br>&nbsp;&nbsp;},{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"e5f7057f-451f-49f3-9b1f-ad1537ada337",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"s",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"s",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":375.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":425.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -221,7 +230,8 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
                 <br>&nbsp;&nbsp;},{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"fd05ea0e-9fac-4fec-a1d6-f606952e2b75",
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;"BeaconId":"se",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceId":null,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"DeviceLabel":"se",
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":550.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":425.0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
@@ -230,6 +240,7 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;}]
                 <br>}
             </p>
+            <p>Normally, the Beacons:DeviceId field would be populated with the actual device UUID.</p>
             <br>
             <br>
             <h1>Sample Team JSON</h1>
@@ -237,6 +248,7 @@ and open the template in the editor.
                 {
                 <br>&nbsp;&nbsp;"Id":"0667d606-5c4e-4bc8-b178-b4ec3f5acf51",
                 <br>&nbsp;&nbsp;"Name":"Scorpion",
+                <br>&nbsp;&nbsp;"MapId":"10663a13-6a03-4f55-885d-bfc05e38d9a0",
                 <br>&nbsp;&nbsp;"PrimaryColor":{
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"A":255,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"R":244,
@@ -248,11 +260,37 @@ and open the template in the editor.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"R":128,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"G":0,
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;"B":0
-                <br>&nbsp;&nbsp;}
+                <br>&nbsp;&nbsp;},
+                <br>&nbsp;&nbsp;"Points":[{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"0c1fbf36-7081-4066-9621-99cbbda2db29",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Name":"Table A",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":250.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":125.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;},{
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Id":"7545e6d6-ade1-4275-9c95-68c97050267b",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Name":"Table B",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"X":250.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Y":275.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Z":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Width":0.0,
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;"Height":0.0
+                <br>&nbsp;&nbsp;}]
                 <br>}
             </p>
             <p>Colors are represented in ARGB values.</p>
-            <p>Note that teams currently have no knowledge of their users. You will have to search through users by TeamId to achieve this sort of query.</p>
+            <br>
+            <br>
+            <h1>Get Teams by Map</h1>
+            <p>To get all the teams belonging to a particular map, you can make a GET request to /api/maps/{MapId}/teams.</p>
+            <br>
+            <br>
+            <h1>Get Users by Team</h1>
+            <p>To get all the users belonging to a particular team, you can make a GET request to /api/teams/{TeamId}/users.</p>
+            <br>
+            <br>
         </div>
         <script src="js/libs/jquery-1.9.0/jquery.min.js"></script>
     </body>
