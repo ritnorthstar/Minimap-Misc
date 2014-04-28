@@ -1,7 +1,6 @@
-Minimap-Misc
+Minimap Information
 ============
 
-Minimap Read-Me
 This package will install the Minimap Control Suite on your computer.  Minimap requires .NET 4.0 to run, which is likely already installed.  If not, the installer should ask you whether you'd like it to be installed automatically.
 Once unpacked, it will place two icons on your desktop, one each for Bridge and Cartographer.  The Bridge shortcut will automatically request Administrator privileges (required for the server to run), so please use that.
 
