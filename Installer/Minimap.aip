@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="11.0" version="11.0" Modules="simple" RootPath="." Language="en" Id="{26DA35E5-36CC-476A-91CE-438821F8C212}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:4.0 Client Profile" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="Installer.exe" Type="8"/>
+    <ROW Property="Manufacturer" Value="RIT North Star"/>
+    <ROW Property="ProductCode" Value="1033:{2D154863-425B-4631-B314-FFBDE09E08CD} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Minimap"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{1D49BC99-FB6B-4D7F-A3B2-F2E1A5E336B4}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 2000, Windows 2000 Service Pack 1, Windows 2000 Service Pack 2, Windows 2000 Service Pack 3, Windows 2000 Service Pack 4, Windows XP x86, Windows XP x86 Service Pack 1, Windows XP x86 Service Pack 2, Windows XP x86 Service Pack 3, Windows Server 2003 x86, Windows Server 2003 x86 Service Pack 1, Windows Server 2003 x86 Service Pack 2, Windows Vista x86, Windows Vista x86 Service Pack 1, Windows Vista x86 Service Pack 2" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows XP x64, Windows XP x64 Service Pack 1, Windows XP x64 Service Pack 2, Windows Server 2003 x64, Windows Server 2003 x64 Service Pack 1, Windows Server 2003 x64 Service Pack 2, Windows Vista x64, Windows Vista x64 Service Pack 1, Windows Vista x64 Service Pack 2, Windows Server 2008 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows XP x64, Windows Server 2003 x64, Windows Vista x64, Windows Server 2008 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:Windows 2000, Windows XP x86, Windows Server 2003 x86, Windows Vista x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Bridge_Dir" Directory_Parent="APPDIR" DefaultDir="Bridge"/>
+    <ROW Directory="Cartographer_Dir" Directory_Parent="APPDIR" DefaultDir="CARTOG~1|Cartographer"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Bridge.cdfms" ComponentId="{E3773ED9-8728-4870-8771-7F69EC574F81}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Bridge.cdfms" Type="0"/>
+    <ROW Component="Bridge.exe" ComponentId="{7F93C652-08F2-4234-8704-CA52058BCA02}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Bridge.exe"/>
+    <ROW Component="Cartographer.cdfms" ComponentId="{37C4F15D-2CB0-4C05-82D8-95AAF520B0A4}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Cartographer.cdfms" Type="0"/>
+    <ROW Component="Cartographer.exe" ComponentId="{1C781442-F350-4AE3-8156-C672A1C9E929}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Cartographer.exe"/>
+    <ROW Component="Core.dll" ComponentId="{9D859787-DEFF-4884-BA30-404ED72130E2}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Core.dll"/>
+    <ROW Component="Core.dll_1" ComponentId="{E500AFC5-BF9F-4485-8BE9-407BFCC91745}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Core.dll_1"/>
+    <ROW Component="DataTypes.dll" ComponentId="{53759DBD-96AE-41E4-88D8-1DDB911EA5A9}" Directory_="Bridge_Dir" Attributes="0" KeyPath="DataTypes.dll"/>
+    <ROW Component="DataTypes.dll_1" ComponentId="{37DA3694-1DC7-4DE0-B952-A173F413AABB}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="DataTypes.dll_1"/>
+    <ROW Component="DrawToolsLib.dll" ComponentId="{F3CA1805-C956-4BDB-A50D-431A6E41EB45}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="DrawToolsLib.dll"/>
+    <ROW Component="Microsoft.Owin.Host.HttpListener.dll" ComponentId="{497B0BE8-4071-462B-A88F-3D43A7414BCC}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Microsoft.Owin.Host.HttpListener.dll"/>
+    <ROW Component="Microsoft.Owin.Hosting.dll" ComponentId="{588186FF-2AC9-4838-9530-49ACE14EAB07}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Microsoft.Owin.Hosting.dll"/>
+    <ROW Component="Microsoft.Owin.dll" ComponentId="{0D6E2B8E-CBED-4363-ADB7-032C70CAA4B5}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Microsoft.Owin.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{52E25325-7CE8-48A5-BDE3-061160CC7666}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="Newtonsoft.Json.dll_1" ComponentId="{794430C2-E10F-43B4-9AA4-45DEB7F59B12}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_1"/>
+    <ROW Component="Owin.dll" ComponentId="{578DBD6E-9FCB-415C-AF25-CA6126747C7B}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Owin.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{7B7A3FD0-0861-4C96-9DBA-367B3E923718}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Server.dll" ComponentId="{53473486-29FF-4D84-A1CD-BBE2F7805EA1}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Server.dll"/>
+    <ROW Component="System.Net.Http.Formatting.dll" ComponentId="{853F646A-5F24-4A26-AA93-D305526BA71C}" Directory_="Bridge_Dir" Attributes="0" KeyPath="System.Net.Http.Formatting.dll"/>
+    <ROW Component="System.Web.Cors.dll" ComponentId="{0A829EAD-FB65-473B-906C-5DD709C15DC8}" Directory_="Bridge_Dir" Attributes="0" KeyPath="System.Web.Cors.dll"/>
+    <ROW Component="System.Web.Http.Cors.dll" ComponentId="{8132668C-B2B0-4232-8C0C-BB01270FAEDF}" Directory_="Bridge_Dir" Attributes="0" KeyPath="System.Web.Http.Cors.dll"/>
+    <ROW Component="System.Web.Http.Owin.dll" ComponentId="{2D9B0710-B60C-445E-B52F-4D6220119871}" Directory_="Bridge_Dir" Attributes="0" KeyPath="System.Web.Http.Owin.dll"/>
+    <ROW Component="System.Web.Http.WebHost.dll" ComponentId="{738DA4E1-A72E-493E-88EF-EEB5A8A999B1}" Directory_="Bridge_Dir" Attributes="0" KeyPath="System.Web.Http.WebHost.dll"/>
+    <ROW Component="System.Web.Http.dll" ComponentId="{038367CC-FBA9-4AF1-9933-308060204C4A}" Directory_="Bridge_Dir" Attributes="0" KeyPath="System.Web.Http.dll"/>
+    <ROW Component="Utilities.dll" ComponentId="{F7CAC66C-71D9-454B-8097-36BD442E0742}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Utilities.dll"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.Themes.Aero.dll" ComponentId="{F9036B73-8DB0-48D4-A01C-10446B066D14}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.Themes.Aero.dll"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.Themes.Aero.dll_1" ComponentId="{1EA89AF4-FCEF-48F1-95BD-3288A9B370FC}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.Themes.Aero.dll_1"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.Themes.Metro.dll" ComponentId="{7E7D1C7F-C764-4D81-9ABE-9243833CF6B9}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.Themes.Metro.dll"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.Themes.Metro.dll_1" ComponentId="{EB3D5CD3-171C-44CC-A040-452F1B09B14F}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.Themes.Metro.dll_1"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.Themes.VS2010.dll" ComponentId="{EA480CBB-A3DA-4EA3-A4AB-5427D96D3BA1}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.Themes.VS2010.dll"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.Themes.VS2010.dll_1" ComponentId="{7224EA65-C174-4A08-A630-B7D52DDEBD8E}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.Themes.VS2010.dll_1"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.dll" ComponentId="{F5586D47-C4E5-4B72-A45F-079C0B99E866}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.dll"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.dll_1" ComponentId="{6BF3DBB5-7772-4F64-B409-D26A717FDE3F}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.dll_1"/>
+    <ROW Component="Xceed.Wpf.DataGrid.dll" ComponentId="{A3628D7A-6C11-406D-A008-DBDF3375DDBE}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Xceed.Wpf.DataGrid.dll"/>
+    <ROW Component="Xceed.Wpf.DataGrid.dll_1" ComponentId="{88170A17-E8DC-4305-8BA5-A084A4741B55}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Xceed.Wpf.DataGrid.dll_1"/>
+    <ROW Component="Xceed.Wpf.Toolkit.dll" ComponentId="{7E53A4BE-4331-4D0E-BE1B-C995171261DA}" Directory_="Bridge_Dir" Attributes="0" KeyPath="Xceed.Wpf.Toolkit.dll"/>
+    <ROW Component="Xceed.Wpf.Toolkit.dll_1" ComponentId="{03835E17-F06D-404A-AC9D-5E7AA2AA03C5}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="Xceed.Wpf.Toolkit.dll_1"/>
+    <ROW Component="ZoomableCanvas.dll" ComponentId="{30A94502-6776-4113-A3DC-344F82842198}" Directory_="Bridge_Dir" Attributes="0" KeyPath="ZoomableCanvas.dll"/>
+    <ROW Component="ZoomableCanvas.dll_1" ComponentId="{FE475CEC-BE13-471A-8E18-851B4CBC9166}" Directory_="Cartographer_Dir" Attributes="0" KeyPath="ZoomableCanvas.dll_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="Bridge.cdfms Bridge.exe Cartographer.cdfms Cartographer.exe Core.dll Core.dll_1 DataTypes.dll DataTypes.dll_1 DrawToolsLib.dll Microsoft.Owin.Host.HttpListener.dll Microsoft.Owin.Hosting.dll Microsoft.Owin.dll Newtonsoft.Json.dll Newtonsoft.Json.dll_1 Owin.dll ProductInformation Server.dll System.Net.Http.Formatting.dll System.Web.Cors.dll System.Web.Http.Cors.dll System.Web.Http.Owin.dll System.Web.Http.WebHost.dll System.Web.Http.dll Utilities.dll Xceed.Wpf.AvalonDock.Themes.Aero.dll Xceed.Wpf.AvalonDock.Themes.Aero.dll_1 Xceed.Wpf.AvalonDock.Themes.Metro.dll Xceed.Wpf.AvalonDock.Themes.Metro.dll_1 Xceed.Wpf.AvalonDock.Themes.VS2010.dll Xceed.Wpf.AvalonDock.Themes.VS2010.dll_1 Xceed.Wpf.AvalonDock.dll Xceed.Wpf.AvalonDock.dll_1 Xceed.Wpf.DataGrid.dll Xceed.Wpf.DataGrid.dll_1 Xceed.Wpf.Toolkit.dll Xceed.Wpf.Toolkit.dll_1 ZoomableCanvas.dll ZoomableCanvas.dll_1"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Bridge.cdfms" Component_="Bridge.cdfms" FileName="BRIDGE~1.CDF|Bridge.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Bridge.cdf-ms" SelfReg="false" NextFile="Bridge.exe"/>
+    <ROW File="Bridge.exe" Component_="Bridge.exe" FileName="Bridge.exe" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Bridge.exe" SelfReg="false" NextFile="Bridge.exe.cdfms" DigSign="true"/>
+    <ROW File="Bridge.exe.cdfms" Component_="Bridge.cdfms" FileName="BRIDGE~2.CDF|Bridge.exe.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Bridge.exe.cdf-ms" SelfReg="false" NextFile="Bridge.exe.config"/>
+    <ROW File="Bridge.exe.config" Component_="Bridge.cdfms" FileName="BRIDGE~1.CON|Bridge.exe.config" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Bridge.exe.config" SelfReg="false" NextFile="Bridge.exe.manifest"/>
+    <ROW File="Bridge.exe.manifest" Component_="Bridge.cdfms" FileName="BRIDGE~1.MAN|Bridge.exe.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Bridge.exe.manifest" SelfReg="false" NextFile="Bridge.manifest"/>
+    <ROW File="Bridge.manifest" Component_="Bridge.cdfms" FileName="BRIDGE~2.MAN|Bridge.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Bridge.manifest" SelfReg="false" NextFile="Core.cdfms"/>
+    <ROW File="Cartographer.cdfms" Component_="Cartographer.cdfms" FileName="CARTOG~1.CDF|Cartographer.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Cartographer.cdf-ms" SelfReg="false" NextFile="Cartographer.exe"/>
+    <ROW File="Cartographer.exe" Component_="Cartographer.exe" FileName="CARTOG~1.EXE|Cartographer.exe" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Cartographer.exe" SelfReg="false" NextFile="Cartographer.exe.cdfms" DigSign="true"/>
+    <ROW File="Cartographer.exe.cdfms" Component_="Cartographer.cdfms" FileName="CARTOG~2.CDF|Cartographer.exe.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Cartographer.exe.cdf-ms" SelfReg="false" NextFile="Cartographer.exe.config"/>
+    <ROW File="Cartographer.exe.config" Component_="Cartographer.cdfms" FileName="CARTOG~1.CON|Cartographer.exe.config" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Cartographer.exe.config" SelfReg="false" NextFile="Cartographer.exe.manifest"/>
+    <ROW File="Cartographer.exe.manifest" Component_="Cartographer.cdfms" FileName="CARTOG~1.MAN|Cartographer.exe.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Cartographer.exe.manifest" SelfReg="false" NextFile="Cartographer.manifest"/>
+    <ROW File="Cartographer.manifest" Component_="Cartographer.cdfms" FileName="CARTOG~2.MAN|Cartographer.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Cartographer.manifest" SelfReg="false" NextFile="Core.cdfms_1"/>
+    <ROW File="Core.cdfms" Component_="Bridge.cdfms" FileName="CORE~1.CDF|Core.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Core.cdf-ms" SelfReg="false" NextFile="Core.dll"/>
+    <ROW File="Core.cdfms_1" Component_="Cartographer.cdfms" FileName="CORE~1.CDF|Core.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Core.cdf-ms" SelfReg="false" NextFile="Core.dll_1"/>
+    <ROW File="Core.dll" Component_="Core.dll" FileName="Core.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Core.dll" SelfReg="false" NextFile="Core.manifest"/>
+    <ROW File="Core.dll_1" Component_="Core.dll_1" FileName="Core.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Core.dll" SelfReg="false" NextFile="Core.manifest_1"/>
+    <ROW File="Core.manifest" Component_="Bridge.cdfms" FileName="CORE~1.MAN|Core.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Core.manifest" SelfReg="false" NextFile="DataTypes.cdfms"/>
+    <ROW File="Core.manifest_1" Component_="Cartographer.cdfms" FileName="CORE~1.MAN|Core.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Core.manifest" SelfReg="false" NextFile="DataTypes.cdfms_1"/>
+    <ROW File="DataTypes.cdfms" Component_="Bridge.cdfms" FileName="DATATY~1.CDF|DataTypes.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\DataTypes.cdf-ms" SelfReg="false" NextFile="DataTypes.dll"/>
+    <ROW File="DataTypes.cdfms_1" Component_="Cartographer.cdfms" FileName="DATATY~1.CDF|DataTypes.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\DataTypes.cdf-ms" SelfReg="false" NextFile="DataTypes.dll_1"/>
+    <ROW File="DataTypes.dll" Component_="DataTypes.dll" FileName="DATATY~1.DLL|DataTypes.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\DataTypes.dll" SelfReg="false" NextFile="DataTypes.manifest"/>
+    <ROW File="DataTypes.dll_1" Component_="DataTypes.dll_1" FileName="DATATY~1.DLL|DataTypes.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\DataTypes.dll" SelfReg="false" NextFile="DataTypes.manifest_1"/>
+    <ROW File="DataTypes.manifest" Component_="Bridge.cdfms" FileName="DATATY~1.MAN|DataTypes.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\DataTypes.manifest" SelfReg="false" NextFile="Microsoft.Owin.cdfms"/>
+    <ROW File="DataTypes.manifest_1" Component_="Cartographer.cdfms" FileName="DATATY~1.MAN|DataTypes.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\DataTypes.manifest" SelfReg="false" NextFile="DrawToolsLib.cdfms"/>
+    <ROW File="DrawToolsLib.cdfms" Component_="Cartographer.cdfms" FileName="DRAWTO~1.CDF|DrawToolsLib.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\DrawToolsLib.cdf-ms" SelfReg="false" NextFile="DrawToolsLib.dll"/>
+    <ROW File="DrawToolsLib.dll" Component_="DrawToolsLib.dll" FileName="DRAWTO~1.DLL|DrawToolsLib.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\DrawToolsLib.dll" SelfReg="false" NextFile="DrawToolsLib.manifest"/>
+    <ROW File="DrawToolsLib.manifest" Component_="Cartographer.cdfms" FileName="DRAWTO~1.MAN|DrawToolsLib.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\DrawToolsLib.manifest" SelfReg="false" NextFile="Newtonsoft.Json.cdfms_1"/>
+    <ROW File="Microsoft.Owin.Host.HttpListener.cdfms" Component_="Bridge.cdfms" FileName="MICROS~2.CDF|Microsoft.Owin.Host.HttpListener.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.Host.HttpListener.cdf-ms" SelfReg="false" NextFile="Microsoft.Owin.Host.HttpListener.dll"/>
+    <ROW File="Microsoft.Owin.Host.HttpListener.dll" Component_="Microsoft.Owin.Host.HttpListener.dll" FileName="MICROS~2.DLL|Microsoft.Owin.Host.HttpListener.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.Host.HttpListener.dll" SelfReg="false" NextFile="Microsoft.Owin.Host.HttpListener.manifest"/>
+    <ROW File="Microsoft.Owin.Host.HttpListener.manifest" Component_="Bridge.cdfms" FileName="MICROS~1.MAN|Microsoft.Owin.Host.HttpListener.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.Host.HttpListener.manifest" SelfReg="false" NextFile="Microsoft.Owin.Hosting.cdfms"/>
+    <ROW File="Microsoft.Owin.Hosting.cdfms" Component_="Bridge.cdfms" FileName="MICROS~3.CDF|Microsoft.Owin.Hosting.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.Hosting.cdf-ms" SelfReg="false" NextFile="Microsoft.Owin.Hosting.dll"/>
+    <ROW File="Microsoft.Owin.Hosting.dll" Component_="Microsoft.Owin.Hosting.dll" FileName="MICROS~3.DLL|Microsoft.Owin.Hosting.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.Hosting.dll" SelfReg="false" NextFile="Microsoft.Owin.Hosting.manifest"/>
+    <ROW File="Microsoft.Owin.Hosting.manifest" Component_="Bridge.cdfms" FileName="MICROS~2.MAN|Microsoft.Owin.Hosting.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.Hosting.manifest" SelfReg="false" NextFile="Microsoft.Owin.manifest"/>
+    <ROW File="Microsoft.Owin.cdfms" Component_="Bridge.cdfms" FileName="MICROS~1.CDF|Microsoft.Owin.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.cdf-ms" SelfReg="false" NextFile="Microsoft.Owin.dll"/>
+    <ROW File="Microsoft.Owin.dll" Component_="Microsoft.Owin.dll" FileName="MICROS~1.DLL|Microsoft.Owin.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.dll" SelfReg="false" NextFile="Microsoft.Owin.Host.HttpListener.cdfms"/>
+    <ROW File="Microsoft.Owin.manifest" Component_="Bridge.cdfms" FileName="MICROS~3.MAN|Microsoft.Owin.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Microsoft.Owin.manifest" SelfReg="false" NextFile="Newtonsoft.Json.cdfms"/>
+    <ROW File="Newtonsoft.Json.cdfms" Component_="Bridge.cdfms" FileName="NEWTON~1.CDF|Newtonsoft.Json.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Newtonsoft.Json.cdf-ms" SelfReg="false" NextFile="Newtonsoft.Json.dll"/>
+    <ROW File="Newtonsoft.Json.cdfms_1" Component_="Cartographer.cdfms" FileName="NEWTON~1.CDF|Newtonsoft.Json.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Newtonsoft.Json.cdf-ms" SelfReg="false" NextFile="Newtonsoft.Json.dll_1"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Newtonsoft.Json.dll" SelfReg="false" NextFile="Newtonsoft.Json.manifest"/>
+    <ROW File="Newtonsoft.Json.dll_1" Component_="Newtonsoft.Json.dll_1" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Newtonsoft.Json.dll" SelfReg="false" NextFile="Newtonsoft.Json.manifest_1"/>
+    <ROW File="Newtonsoft.Json.manifest" Component_="Bridge.cdfms" FileName="NEWTON~1.MAN|Newtonsoft.Json.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Newtonsoft.Json.manifest" SelfReg="false" NextFile="Owin.cdfms"/>
+    <ROW File="Newtonsoft.Json.manifest_1" Component_="Cartographer.cdfms" FileName="NEWTON~1.MAN|Newtonsoft.Json.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Newtonsoft.Json.manifest" SelfReg="false" NextFile="Utilities.cdfms"/>
+    <ROW File="Owin.cdfms" Component_="Bridge.cdfms" FileName="OWIN~1.CDF|Owin.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Owin.cdf-ms" SelfReg="false" NextFile="Owin.dll"/>
+    <ROW File="Owin.dll" Component_="Owin.dll" FileName="Owin.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Owin.dll" SelfReg="false" NextFile="Owin.manifest"/>
+    <ROW File="Owin.manifest" Component_="Bridge.cdfms" FileName="OWIN~1.MAN|Owin.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Owin.manifest" SelfReg="false" NextFile="Server.cdfms"/>
+    <ROW File="Server.cdfms" Component_="Bridge.cdfms" FileName="SERVER~1.CDF|Server.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Server.cdf-ms" SelfReg="false" NextFile="Server.dll"/>
+    <ROW File="Server.dll" Component_="Server.dll" FileName="Server.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Server.dll" SelfReg="false" NextFile="Server.manifest"/>
+    <ROW File="Server.manifest" Component_="Bridge.cdfms" FileName="SERVER~1.MAN|Server.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Server.manifest" SelfReg="false" NextFile="System.Net.Http.Formatting.cdfms"/>
+    <ROW File="System.Net.Http.Formatting.cdfms" Component_="Bridge.cdfms" FileName="SYSTEM~1.CDF|System.Net.Http.Formatting.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Net.Http.Formatting.cdf-ms" SelfReg="false" NextFile="System.Net.Http.Formatting.dll"/>
+    <ROW File="System.Net.Http.Formatting.dll" Component_="System.Net.Http.Formatting.dll" FileName="SYSTEM~1.DLL|System.Net.Http.Formatting.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Net.Http.Formatting.dll" SelfReg="false" NextFile="System.Net.Http.Formatting.manifest"/>
+    <ROW File="System.Net.Http.Formatting.manifest" Component_="Bridge.cdfms" FileName="SYSTEM~1.MAN|System.Net.Http.Formatting.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Net.Http.Formatting.manifest" SelfReg="false" NextFile="System.Web.Cors.cdfms"/>
+    <ROW File="System.Web.Cors.cdfms" Component_="Bridge.cdfms" FileName="SYSTEM~2.CDF|System.Web.Cors.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Cors.cdf-ms" SelfReg="false" NextFile="System.Web.Cors.dll"/>
+    <ROW File="System.Web.Cors.dll" Component_="System.Web.Cors.dll" FileName="SYSTEM~2.DLL|System.Web.Cors.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Cors.dll" SelfReg="false" NextFile="System.Web.Cors.manifest"/>
+    <ROW File="System.Web.Cors.manifest" Component_="Bridge.cdfms" FileName="SYSTEM~2.MAN|System.Web.Cors.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Cors.manifest" SelfReg="false" NextFile="System.Web.Http.cdfms"/>
+    <ROW File="System.Web.Http.Cors.cdfms" Component_="Bridge.cdfms" FileName="SYSTEM~4.CDF|System.Web.Http.Cors.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.Cors.cdf-ms" SelfReg="false" NextFile="System.Web.Http.Cors.dll"/>
+    <ROW File="System.Web.Http.Cors.dll" Component_="System.Web.Http.Cors.dll" FileName="SYSTEM~3.DLL|System.Web.Http.Cors.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.Cors.dll" SelfReg="false" NextFile="System.Web.Http.Cors.manifest"/>
+    <ROW File="System.Web.Http.Cors.manifest" Component_="Bridge.cdfms" FileName="SYSTEM~3.MAN|System.Web.Http.Cors.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.Cors.manifest" SelfReg="false" NextFile="System.Web.Http.dll"/>
+    <ROW File="System.Web.Http.Owin.cdfms" Component_="Bridge.cdfms" FileName="SYSTEM~5.CDF|System.Web.Http.Owin.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.Owin.cdf-ms" SelfReg="false" NextFile="System.Web.Http.Owin.dll"/>
+    <ROW File="System.Web.Http.Owin.dll" Component_="System.Web.Http.Owin.dll" FileName="SYSTEM~5.DLL|System.Web.Http.Owin.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.Owin.dll" SelfReg="false" NextFile="System.Web.Http.Owin.manifest"/>
+    <ROW File="System.Web.Http.Owin.manifest" Component_="Bridge.cdfms" FileName="SYSTEM~5.MAN|System.Web.Http.Owin.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.Owin.manifest" SelfReg="false" NextFile="System.Web.Http.WebHost.cdfms"/>
+    <ROW File="System.Web.Http.WebHost.cdfms" Component_="Bridge.cdfms" FileName="SYSTEM~6.CDF|System.Web.Http.WebHost.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.WebHost.cdf-ms" SelfReg="false" NextFile="System.Web.Http.WebHost.dll"/>
+    <ROW File="System.Web.Http.WebHost.dll" Component_="System.Web.Http.WebHost.dll" FileName="SYSTEM~6.DLL|System.Web.Http.WebHost.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.WebHost.dll" SelfReg="false" NextFile="System.Web.Http.WebHost.manifest"/>
+    <ROW File="System.Web.Http.WebHost.manifest" Component_="Bridge.cdfms" FileName="SYSTEM~6.MAN|System.Web.Http.WebHost.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.WebHost.manifest" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.cdfms"/>
+    <ROW File="System.Web.Http.cdfms" Component_="Bridge.cdfms" FileName="SYSTEM~3.CDF|System.Web.Http.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.cdf-ms" SelfReg="false" NextFile="System.Web.Http.Cors.cdfms"/>
+    <ROW File="System.Web.Http.dll" Component_="System.Web.Http.dll" FileName="SYSTEM~4.DLL|System.Web.Http.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.dll" SelfReg="false" NextFile="System.Web.Http.manifest"/>
+    <ROW File="System.Web.Http.manifest" Component_="Bridge.cdfms" FileName="SYSTEM~4.MAN|System.Web.Http.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\System.Web.Http.manifest" SelfReg="false" NextFile="System.Web.Http.Owin.cdfms"/>
+    <ROW File="Utilities.cdfms" Component_="Cartographer.cdfms" FileName="UTILIT~1.CDF|Utilities.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Utilities.cdf-ms" SelfReg="false" NextFile="Utilities.dll"/>
+    <ROW File="Utilities.dll" Component_="Utilities.dll" FileName="UTILIT~1.DLL|Utilities.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Utilities.dll" SelfReg="false" NextFile="Utilities.manifest"/>
+    <ROW File="Utilities.manifest" Component_="Cartographer.cdfms" FileName="UTILIT~1.MAN|Utilities.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Utilities.manifest" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.cdfms_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Aero.cdfms" Component_="Bridge.cdfms" FileName="XCEEDW~2.CDF|Xceed.Wpf.AvalonDock.Themes.Aero.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.Aero.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Aero.dll"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Aero.cdfms_1" Component_="Cartographer.cdfms" FileName="XCEEDW~2.CDF|Xceed.Wpf.AvalonDock.Themes.Aero.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.Aero.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Aero.dll_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Aero.dll" Component_="Xceed.Wpf.AvalonDock.Themes.Aero.dll" FileName="XCEEDW~2.DLL|Xceed.Wpf.AvalonDock.Themes.Aero.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.Aero.dll" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Aero.manifest"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Aero.dll_1" Component_="Xceed.Wpf.AvalonDock.Themes.Aero.dll_1" FileName="XCEEDW~2.DLL|Xceed.Wpf.AvalonDock.Themes.Aero.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.Aero.dll" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Aero.manifest_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Aero.manifest" Component_="Bridge.cdfms" FileName="XCEEDW~2.MAN|Xceed.Wpf.AvalonDock.Themes.Aero.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.Aero.manifest" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Metro.cdfms"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Aero.manifest_1" Component_="Cartographer.cdfms" FileName="XCEEDW~2.MAN|Xceed.Wpf.AvalonDock.Themes.Aero.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.Aero.manifest" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Metro.cdfms_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Metro.cdfms" Component_="Bridge.cdfms" FileName="XCEEDW~3.CDF|Xceed.Wpf.AvalonDock.Themes.Metro.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.Metro.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Metro.dll"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Metro.cdfms_1" Component_="Cartographer.cdfms" FileName="XCEEDW~3.CDF|Xceed.Wpf.AvalonDock.Themes.Metro.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.Metro.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Metro.dll_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Metro.dll" Component_="Xceed.Wpf.AvalonDock.Themes.Metro.dll" FileName="XCEEDW~3.DLL|Xceed.Wpf.AvalonDock.Themes.Metro.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.Metro.dll" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Metro.manifest"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Metro.dll_1" Component_="Xceed.Wpf.AvalonDock.Themes.Metro.dll_1" FileName="XCEEDW~3.DLL|Xceed.Wpf.AvalonDock.Themes.Metro.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.Metro.dll" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Metro.manifest_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Metro.manifest" Component_="Bridge.cdfms" FileName="XCEEDW~3.MAN|Xceed.Wpf.AvalonDock.Themes.Metro.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.Metro.manifest" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.VS2010.cdfms"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.Metro.manifest_1" Component_="Cartographer.cdfms" FileName="XCEEDW~3.MAN|Xceed.Wpf.AvalonDock.Themes.Metro.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.Metro.manifest" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.VS2010.cdfms_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.VS2010.cdfms" Component_="Bridge.cdfms" FileName="XCEEDW~4.CDF|Xceed.Wpf.AvalonDock.Themes.VS2010.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.VS2010.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.VS2010.dll"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.VS2010.cdfms_1" Component_="Cartographer.cdfms" FileName="XCEEDW~4.CDF|Xceed.Wpf.AvalonDock.Themes.VS2010.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.VS2010.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.VS2010.dll_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.VS2010.dll" Component_="Xceed.Wpf.AvalonDock.Themes.VS2010.dll" FileName="XCEEDW~4.DLL|Xceed.Wpf.AvalonDock.Themes.VS2010.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.VS2010.dll" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.VS2010.manifest"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.VS2010.dll_1" Component_="Xceed.Wpf.AvalonDock.Themes.VS2010.dll_1" FileName="XCEEDW~4.DLL|Xceed.Wpf.AvalonDock.Themes.VS2010.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.VS2010.dll" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.VS2010.manifest_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.VS2010.manifest" Component_="Bridge.cdfms" FileName="XCEEDW~4.MAN|Xceed.Wpf.AvalonDock.Themes.VS2010.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.Themes.VS2010.manifest" SelfReg="false" NextFile="Xceed.Wpf.DataGrid.cdfms"/>
+    <ROW File="Xceed.Wpf.AvalonDock.Themes.VS2010.manifest_1" Component_="Cartographer.cdfms" FileName="XCEEDW~4.MAN|Xceed.Wpf.AvalonDock.Themes.VS2010.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.Themes.VS2010.manifest" SelfReg="false" NextFile="Xceed.Wpf.DataGrid.cdfms_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.cdfms" Component_="Bridge.cdfms" FileName="XCEEDW~1.CDF|Xceed.Wpf.AvalonDock.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.dll"/>
+    <ROW File="Xceed.Wpf.AvalonDock.cdfms_1" Component_="Cartographer.cdfms" FileName="XCEEDW~1.CDF|Xceed.Wpf.AvalonDock.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.dll_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.dll" Component_="Xceed.Wpf.AvalonDock.dll" FileName="XCEEDW~1.DLL|Xceed.Wpf.AvalonDock.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.dll" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.manifest"/>
+    <ROW File="Xceed.Wpf.AvalonDock.dll_1" Component_="Xceed.Wpf.AvalonDock.dll_1" FileName="XCEEDW~1.DLL|Xceed.Wpf.AvalonDock.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.dll" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.manifest_1"/>
+    <ROW File="Xceed.Wpf.AvalonDock.manifest" Component_="Bridge.cdfms" FileName="XCEEDW~1.MAN|Xceed.Wpf.AvalonDock.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.AvalonDock.manifest" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Aero.cdfms"/>
+    <ROW File="Xceed.Wpf.AvalonDock.manifest_1" Component_="Cartographer.cdfms" FileName="XCEEDW~1.MAN|Xceed.Wpf.AvalonDock.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.AvalonDock.manifest" SelfReg="false" NextFile="Xceed.Wpf.AvalonDock.Themes.Aero.cdfms_1"/>
+    <ROW File="Xceed.Wpf.DataGrid.cdfms" Component_="Bridge.cdfms" FileName="XCEEDW~5.CDF|Xceed.Wpf.DataGrid.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.DataGrid.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.DataGrid.dll"/>
+    <ROW File="Xceed.Wpf.DataGrid.cdfms_1" Component_="Cartographer.cdfms" FileName="XCEEDW~5.CDF|Xceed.Wpf.DataGrid.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.DataGrid.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.DataGrid.dll_1"/>
+    <ROW File="Xceed.Wpf.DataGrid.dll" Component_="Xceed.Wpf.DataGrid.dll" FileName="XCEEDW~5.DLL|Xceed.Wpf.DataGrid.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.DataGrid.dll" SelfReg="false" NextFile="Xceed.Wpf.DataGrid.manifest"/>
+    <ROW File="Xceed.Wpf.DataGrid.dll_1" Component_="Xceed.Wpf.DataGrid.dll_1" FileName="XCEEDW~5.DLL|Xceed.Wpf.DataGrid.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.DataGrid.dll" SelfReg="false" NextFile="Xceed.Wpf.DataGrid.manifest_1"/>
+    <ROW File="Xceed.Wpf.DataGrid.manifest" Component_="Bridge.cdfms" FileName="XCEEDW~5.MAN|Xceed.Wpf.DataGrid.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.DataGrid.manifest" SelfReg="false" NextFile="Xceed.Wpf.Toolkit.cdfms"/>
+    <ROW File="Xceed.Wpf.DataGrid.manifest_1" Component_="Cartographer.cdfms" FileName="XCEEDW~5.MAN|Xceed.Wpf.DataGrid.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.DataGrid.manifest" SelfReg="false" NextFile="Xceed.Wpf.Toolkit.cdfms_1"/>
+    <ROW File="Xceed.Wpf.Toolkit.cdfms" Component_="Bridge.cdfms" FileName="XCEEDW~6.CDF|Xceed.Wpf.Toolkit.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.Toolkit.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.Toolkit.dll"/>
+    <ROW File="Xceed.Wpf.Toolkit.cdfms_1" Component_="Cartographer.cdfms" FileName="XCEEDW~6.CDF|Xceed.Wpf.Toolkit.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.Toolkit.cdf-ms" SelfReg="false" NextFile="Xceed.Wpf.Toolkit.dll_1"/>
+    <ROW File="Xceed.Wpf.Toolkit.dll" Component_="Xceed.Wpf.Toolkit.dll" FileName="XCEEDW~6.DLL|Xceed.Wpf.Toolkit.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.Toolkit.dll" SelfReg="false" NextFile="Xceed.Wpf.Toolkit.manifest"/>
+    <ROW File="Xceed.Wpf.Toolkit.dll_1" Component_="Xceed.Wpf.Toolkit.dll_1" FileName="XCEEDW~6.DLL|Xceed.Wpf.Toolkit.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.Toolkit.dll" SelfReg="false" NextFile="Xceed.Wpf.Toolkit.manifest_1"/>
+    <ROW File="Xceed.Wpf.Toolkit.manifest" Component_="Bridge.cdfms" FileName="XCEEDW~6.MAN|Xceed.Wpf.Toolkit.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\Xceed.Wpf.Toolkit.manifest" SelfReg="false" NextFile="ZoomableCanvas.cdfms"/>
+    <ROW File="Xceed.Wpf.Toolkit.manifest_1" Component_="Cartographer.cdfms" FileName="XCEEDW~6.MAN|Xceed.Wpf.Toolkit.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\Xceed.Wpf.Toolkit.manifest" SelfReg="false" NextFile="ZoomableCanvas.cdfms_1"/>
+    <ROW File="ZoomableCanvas.cdfms" Component_="Bridge.cdfms" FileName="ZOOMAB~1.CDF|ZoomableCanvas.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\ZoomableCanvas.cdf-ms" SelfReg="false" NextFile="ZoomableCanvas.dll"/>
+    <ROW File="ZoomableCanvas.cdfms_1" Component_="Cartographer.cdfms" FileName="ZOOMAB~1.CDF|ZoomableCanvas.cdf-ms" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\ZoomableCanvas.cdf-ms" SelfReg="false" NextFile="ZoomableCanvas.dll_1"/>
+    <ROW File="ZoomableCanvas.dll" Component_="ZoomableCanvas.dll" FileName="ZOOMAB~1.DLL|ZoomableCanvas.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\ZoomableCanvas.dll" SelfReg="false" NextFile="ZoomableCanvas.manifest"/>
+    <ROW File="ZoomableCanvas.dll_1" Component_="ZoomableCanvas.dll_1" FileName="ZOOMAB~1.DLL|ZoomableCanvas.dll" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\ZoomableCanvas.dll" SelfReg="false" NextFile="ZoomableCanvas.manifest_1"/>
+    <ROW File="ZoomableCanvas.manifest" Component_="Bridge.cdfms" FileName="ZOOMAB~1.MAN|ZoomableCanvas.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Bridge\ZoomableCanvas.manifest" SelfReg="false" NextFile="Cartographer.cdfms"/>
+    <ROW File="ZoomableCanvas.manifest_1" Component_="Cartographer.cdfms" FileName="ZOOMAB~1.MAN|ZoomableCanvas.manifest" Attributes="0" SourcePath="C:\Users\Benjin\AppData\Local\Apps\2.0\Cartographer\ZoomableCanvas.manifest" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET40_CLIENTPROFILE_SEARCH" Signature_="AI_DotNet40ClientProfileSearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_DOTNET451_SEARCH" Signature_="AI_DotNet451SearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_DOTNET45_SEARCH" Signature_="AI_DotNet45SearchSgn" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ShortcutFlags.dll" SourcePath="&lt;AI_CUSTACTS&gt;ShortcutFlags.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_ApplyShortcutFlags" Type="3073" Source="ShortcutFlags.dll" Target="UpdateShortcutFlags" WithoutSeq="true"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PrepareShortcutFlags" Type="1" Source="ShortcutFlags.dll" Target="PrepareActionData"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Installer.exe" SourcePath="..\Images\Installer.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_PrepareShortcutFlags" Condition="(VersionNT &gt; 501) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="4501"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_DpiContentScale" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 502) OR (((VersionNT64 = 502) AND (ServicePackLevel &gt;= 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 502) OR (((VersionNT64 = 502) AND (ServicePackLevel &lt;&gt; 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 502) OR (((VersionNT64 = 502) AND (ServicePackLevel &lt;&gt; 2)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 502) OR ((VersionNT64 = 502) AND ((MsiNTProductType = 1) OR (ServicePackLevel &gt;= 1)))) AND ((VersionNT64 &lt;&gt; 502) OR ((VersionNT64 = 502) AND ((MsiNTProductType = 1) OR (ServicePackLevel &lt;&gt; 1)))) AND ((VersionNT64 &lt;&gt; 502) OR ((VersionNT64 = 502) AND ((MsiNTProductType = 1) OR (ServicePackLevel &lt;&gt; 2)))) AND ((VersionNT64 &lt;&gt; 600) OR (((VersionNT64 = 600) AND (ServicePackLevel &gt;= 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 600) OR (((VersionNT64 = 600) AND (ServicePackLevel &lt;&gt; 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 600) OR (((VersionNT64 = 600) AND (ServicePackLevel &lt;&gt; 2)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 600) OR ((VersionNT64 = 600) AND (MsiNTProductType = 1))) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="( Version9X OR VersionNT64 OR ( VersionNT AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &gt;= 1))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 1))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 2))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 3))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 4))) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &gt;= 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &lt;&gt; 2))) OR VersionNT64) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &lt;&gt; 3))) OR VersionNT64) AND (((VersionNT &lt;&gt; 502) OR ((VersionNT = 502) AND (ServicePackLevel &gt;= 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 502) OR ((VersionNT = 502) AND (ServicePackLevel &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 502) OR ((VersionNT = 502) AND (ServicePackLevel &lt;&gt; 2))) OR VersionNT64) AND (((VersionNT &lt;&gt; 600) OR (((VersionNT = 600) AND (ServicePackLevel &gt;= 1)) OR (MsiNTProductType &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 600) OR (((VersionNT = 600) AND (ServicePackLevel &lt;&gt; 1)) OR (MsiNTProductType &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 600) OR (((VersionNT = 600) AND (ServicePackLevel &lt;&gt; 2)) OR (MsiNTProductType &lt;&gt; 1))) OR VersionNT64) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNTDisplay]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(AI_DOTNET40_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_SEARCH = &quot;#1&quot;) OR (AI_DOTNET45_SEARCH &gt;= &quot;4.5&quot;) OR (AI_DOTNET451_SEARCH = &quot;#378758&quot;) OR (AI_DOTNET451_SEARCH = &quot;#378675&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT40Display]" DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet40ClientProfileSearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client" Name="Install" Type="2"/>
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+    <ROW Signature_="AI_DotNet451SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Release" Type="2"/>
+    <ROW Signature_="AI_DotNet45SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Version" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="MinimapBridge" Directory_="DesktopFolder" Name="MINIMA~1|Minimap Bridge" Component_="Bridge.exe" Target="[#Bridge.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Bridge_Dir" CustomFlags="1"/>
+    <ROW Shortcut="MinimapCartographer" Directory_="DesktopFolder" Name="MINIMA~2|Minimap Cartographer" Component_="Cartographer.exe" Target="[#Cartographer.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Cartographer_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
