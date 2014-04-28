@@ -6,9 +6,9 @@ Once unpacked, it will place two icons on your desktop, one each for Bridge and 
 
 The files you’ll need/use:
 
-• An image with the layout of the venue in .PNG or .JPG form.  To work properly, the image must be cropped directly to the dimensions that you’re prompted to enter.  To do this, you can use pretty much any photo editing software (Photo Gallery, Lightroom) or even an online tool (e.g. lunapic.com/editor).
-• A beacon specifications file (.BCN).  Each beacon has two types of identifiers, one that’s easily read by humans (a physical label that we’ve written on the beacons) and one that’s a somewhat messy hex code (like “E4:3E:A0:63:BC:C6”).  To save you the trouble, we’ve supplied a .BCN file with the IDs for the eight beacons we’ve sent.
-• A Minimap map file.  This what you’ll be making with Cartographer, and will open in Bridge.  Instructions for creating it are below.
+* An image with the layout of the venue in .PNG or .JPG form.  To work properly, the image must be cropped directly to the dimensions that you’re prompted to enter.  To do this, you can use pretty much any photo editing software (Photo Gallery, Lightroom) or even an online tool (e.g. lunapic.com/editor).
+* A beacon specifications file (.BCN).  Each beacon has two types of identifiers, one that’s easily read by humans (a physical label that we’ve written on the beacons) and one that’s a somewhat messy hex code (like “E4:3E:A0:63:BC:C6”).  To save you the trouble, we’ve supplied a .BCN file with the IDs for the eight beacons we’ve sent.
+* A Minimap map file.  This what you’ll be making with Cartographer, and will open in Bridge.  Instructions for creating it are below.
 
 The process for creating a map using Cartographer:
 
